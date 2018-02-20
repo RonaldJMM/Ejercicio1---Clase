@@ -33,24 +33,33 @@ class Ejercicio1{
     
   String nombreAlumno;
   int numeroNotas;
-  float notasAlumno[];
+  float notasAlumno;
   float totalPromedioNotas;
-  int i;
+  int desicion;
+  int i=0;
   void calculoPromedioNotas(){
       Scanner lecturaVar = new Scanner(System.in);
       System.out.println("Promedio de notas de un alumno.");
       System.out.println("Digite el nombre del Alumno: .");
        nombreAlumno = lecturaVar.nextLine();
-       System.out.println("Digite la cantidad de notas del alumno.");
-       numeroNotas = lecturaVar.nextInt();
+       do{
+           i++;
+           numeroNotas=i;
+           System.out.println("Digite la nota "+i+" : ");
+           notasAlumno=notasAlumno+lecturaVar.nextFloat();
+           if(notasAlumno<0){
+               
+           }
+           System.out.println("Desea ingresar otra nota?");
+           System.out.println("1.Si  2.No");
+           System.out.println("Respuesta: ");
+           desicion=lecturaVar.nextInt();
+           
+       }while(desicion!=2);
        
-       for(i=1;i==numeroNotas;i++){
-          System.out.println("Digite la nota "+i+" : "); 
-          notasAlumno[i] = lecturaVar.nextFloat();
-       }
-       
-      System.out.println("Notas del alumno: "+nombreAlumno);
-      System.out.println("Promedio de notas de un alumno.");
+       totalPromedioNotas=(float)(notasAlumno/numeroNotas);
+      System.out.println("Promedio de notas del Alumno: "+nombreAlumno);
+      System.out.println("Total Promedio: "+totalPromedioNotas);
   }
     
 }
