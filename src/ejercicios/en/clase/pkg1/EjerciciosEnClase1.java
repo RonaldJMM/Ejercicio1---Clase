@@ -19,11 +19,14 @@ public class EjerciciosEnClase1 {
     
    
     public static void main(String[] args) {
-      Ejercicio1 objeto1=new Ejercicio1();
-      objeto1.calculoPromedioNotas();
+    //  Ejercicio1 objeto1=new Ejercicio1();
+    //  objeto1.calculoPromedioNotas();
       
-      Ejercicio4 objeto2=new Ejercicio4();
-      objeto2.conversionDeSegundos();
+    //  Ejercicio4 objeto2=new Ejercicio4();
+    //  objeto2.conversionDeSegundos();
+      
+      Ejercicio2 objeto3 =new Ejercicio2();
+      objeto3.estaciones();
       
     }
     
@@ -100,3 +103,119 @@ class Ejercicio1{
     }     
          
     }
+
+class Ejercicio2{
+
+          int mes;
+          int opcion ;
+    
+            
+    
+             
+            void estaciones(){
+                
+                
+                
+                
+                Scanner entrada = new Scanner(System.in);
+            
+                do{
+                
+                System.out.println("Digite por favor el numero del mes correspondiente para determinas estacion");
+                mes =entrada.nextInt();
+                
+                
+                switch(mes){
+                
+                    case 1 :
+                        
+                        System.out.println("La estacion del mes que digito es invierno");
+                        
+                        break;
+                     case 2 :
+                        
+                        System.out.println("La estacion del mes que digito es invierno");
+                        
+                        break;   
+                        
+                      case 3 :
+                        
+                        System.out.println("La estacion del mes que digito es invierno");
+                        
+                        break;  
+                        
+                         case 4 :
+                        
+                        System.out.println("La estacion del mes que digito es verano");
+                        
+                        break;
+                
+                        case 5 :
+                        
+                        System.out.println("La estacion del mes que digito es verano");
+                        
+                        break;
+                        
+                         case 6 :
+                        
+                        System.out.println("La estacion del mes que digito es verano");
+                        
+                        break;
+                        
+                        
+                         case 7 :
+                        
+                        System.out.println("La estacion del mes que digito es otoño");
+                        
+                        break;
+                        
+                         case 8 :
+                        
+                        System.out.println("La estacion del mes que digito es otoño");
+                        
+                        break;
+                        
+                         case 9:
+                        
+                        System.out.println("La estacion del mes que digito es otoño");
+                        
+                        break;
+                        
+                        
+                         case 10 :
+                        
+                        System.out.println("La estacion del mes que digito es primavera");
+                        
+                        break;
+                        
+                         case 11 :
+                        
+                        System.out.println("La estacion del mes que digito es primavera");
+                        
+                        break;
+                        
+                         case 12 :
+                        
+                        System.out.println("La estacion del mes que digito es primavera");
+                        
+                        break;
+                        
+                
+                }
+                
+                
+                System.out.println("Desea ejecutar nuevamente el programa");
+                System.out.println("1.si");
+                System.out.println("2.no");
+                opcion=entrada.nextInt();
+                
+                
+            
+                }while(opcion!=2);
+            
+                System.out.println("Gracias por usar este programa");
+            }
+
+
+
+}
